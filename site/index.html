@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Catch a Satellite — real Earth photos we pulled from space radio</title>
+<meta name="description" content="We tuned public radio receivers to Russian Meteor-M weather satellites as they flew over, streamed the raw signal, and decoded the photos of Earth ourselves. Live globe, next pass over Hyderabad, and every photo we caught.">
+<meta property="og:title" content="Catch a Satellite 🛰️ real Earth photos from space radio">
+<meta property="og:description" content="Real photos of Earth we decoded ourselves from a live weather-satellite radio signal. Plus the next pass over Hyderabad.">
+<meta property="og:image" content="og.jpg">
+<meta name="theme-color" content="#04060d">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="freebuff/skyplot.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#top" aria-label="Catch a Satellite home"><span class="dot" aria-hidden="true"></span>CATCH&nbsp;A&nbsp;SATELLITE</a>
+  <nav aria-label="Sections"><a href="#photos">Photos</a><a href="#pass">Next pass</a><a href="#how">How</a></nav>
+</header>
+
+<main id="top">
+<section class="hero" aria-label="Live globe">
+  <div id="globe" class="globe" role="img" aria-label="3D globe showing the live positions and ground tracks of Meteor-M N2-3 and N2-4"></div>
+  <div class="hero-copy">
+    <p class="eyebrow"><span class="live" aria-hidden="true"></span> LIVE · computed in your browser</p>
+    <h1 id="heroTitle">We're catching photos of Earth <em>straight out of the radio</em>.</h1>
+    <p class="lede">Two Russian weather satellites shout pictures of the planet at 137.9&nbsp;MHz to anyone listening. We tuned public radio receivers to them as they flew over, recorded the raw signal and decoded the photos ourselves.</p>
+    <div class="sat-chips" id="satChips"></div>
+  </div>
+  <div class="globe-legend" aria-hidden="true">
+    <span><i class="lg lg-a"></i>Meteor-M N2-3</span><span><i class="lg lg-b"></i>Meteor-M N2-4</span><span><i class="lg lg-h"></i>Hyderabad</span><span><i class="lg lg-r"></i>receivers we used</span>
+  </div>
+</section>
+
+<section id="pass" class="card pass" aria-labelledby="passTitle">
+  <p class="kicker">Over Hyderabad · 17.385°N 78.487°E</p>
+  <h2 id="passTitle">Next pass overhead</h2>
+  <div class="countdown" id="countdown" aria-live="polite">
+    <div><b id="cdH">--</b><span>hrs</span></div><div><b id="cdM">--</b><span>min</span></div><div><b id="cdS">--</b><span>sec</span></div>
+  </div>
+  <p class="pass-detail" id="passDetail">Computing orbits…</p>
+  <figure class="sky"><div class="skyplot" id="skyplot"></div><figcaption>Where to look: the next pass drawn on the sky above Hyderabad. The centre is straight overhead and the rim is the horizon. <span class="credit">Sky chart written by Freebuff.</span></figcaption></figure>
+  <ol class="pass-list" id="passList" aria-label="Upcoming passes over Hyderabad"></ol>
+  <p class="fine">Times in IST. Orbits come from live CelesTrak element sets, propagated with SGP4 right here on your phone. A pass is counted when the satellite climbs above 10° over the horizon. Higher means a stronger signal.</p>
+</section>
+
+<section id="photos" class="photos" aria-labelledby="photosTitle">
+  <div class="section-head">
+    <p class="kicker">Decoded by us · not downloaded</p>
+    <h2 id="photosTitle">Photos we caught</h2>
+    <p class="sub" id="photosSub">Each image below came from a raw radio recording we streamed and decoded ourselves. The antenna belongs to a volunteer. The decoding is ours.</p>
+  </div>
+  <div class="gallery" id="gallery"></div>
+</section>
+
+<section id="how" class="how" aria-labelledby="howTitle">
+  <div class="section-head">
+    <p class="kicker">From radio hiss to a photo</p>
+    <h2 id="howTitle">How we caught it</h2>
+  </div>
+  <ol class="steps">
+    <li><span class="n">1</span><div><h3>Predict the pass</h3><p>We take each satellite's orbital elements from CelesTrak, run SGP4 and work out to the second when Meteor-M N2-3 or N2-4 rises over a receiver. It's the same maths as the countdown above.</p></div></li>
+    <li><span class="n">2</span><div><h3>Borrow an ear</h3><p>Radio hobbyists around the world share their receivers publicly as <b>SpyServers</b>. Right before the satellite rises, we connect to one, tune it to <b>137.9&nbsp;MHz</b> and stream the <b>raw I/Q radio samples</b> (about 190,000–310,000 per second) to our own computer for the whole 10–12 minute pass.</p></div></li>
+    <li><span class="n">3</span><div><h3>Demodulate</h3><p>The satellite speaks <b>LRPT</b>: digital QPSK at 72,000 symbols per second. We run SatDump on the recording. It locks onto the carrier, tracks the Doppler shift as the satellite races past at 7&nbsp;km/s and turns the waves into bits.</p></div></li>
+    <li><span class="n">4</span><div><h3>Fix the errors</h3><p>Viterbi decoding and Reed–Solomon error correction clean up the noisy bits. Out come CCSDS frames carrying JPEG-compressed strips of the MSU-MR camera's scan lines, each about 1 km per pixel.</p></div></li>
+    <li><span class="n">5</span><div><h3>Rebuild the picture</h3><p>Strips become channels: visible, near-infrared and thermal infrared. Layered together they make the colour composites you see, with the satellite's timestamps to say exactly when and where they were taken.</p></div></li>
+  </ol>
+  <div class="honest card">
+    <h3>Honest notes</h3>
+    <ul>
+      <li><b>Not our antenna.</b> Every signal came through a volunteer's public receiver, credited on each photo. What we did ourselves: choose the pass, record the raw signal and decode it.</li>
+      <li><b>Why not the SatNOGS archive?</b> We checked it first. The volunteer network's public "recordings" of Meteor passes are 48&nbsp;kHz FM-demodulated audio, which can't carry a 72k-symbol digital signal. Its only images are ones the stations decoded themselves, and we never pass those off as ours.</li>
+      <li><b>Old US NOAA satellites?</b> Their analogue APT signal is gone. A "good" NOAA-18 recording from 20 Oct 2026 has no 2400&nbsp;Hz tone and no sync, so we went digital.</li>
+      <li><b>India first, when we can.</b> There's no public receiver in India we can tune to 137.9&nbsp;MHz yet, so each photo is labelled with the region it really shows.</li>
+      <li><b>Public receivers are imperfect.</b> Most use broadband antennas, not satellite antennas, so many passes come in too weak to decode. Every attempt is logged below, failures included.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="log" class="log card" aria-labelledby="logTitle">
+  <h2 id="logTitle">Every pass we tried</h2>
+  <p class="sub">Live capture log. Green = a photo decoded.</p>
+  <div class="log-wrap"><table class="log-table"><thead><tr><th scope="col">UTC</th><th scope="col">Sat</th><th scope="col">Receiver</th><th scope="col">Result</th></tr></thead><tbody id="logBody"></tbody></table></div>
+</section>
+</main>
+
+<footer class="foot">
+  <p>Built for Mani by Max (Tab). Orbits: CelesTrak + satellite.js. Globe: globe.gl. Decoder: SatDump. Signals: public Airspy SpyServer receivers run by radio hobbyists.</p>
+</footer>
+
+<div class="lightbox" id="lightbox" hidden><button class="lb-close" id="lbClose" aria-label="Close">×</button><img id="lbImg" alt=""><p id="lbCap"></p></div>
+
+<script src="vendor/satellite.min.js"></script>
+<script src="freebuff/skyplot.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/globe.gl@2.46.2/dist/globe.gl.min.js" defer></script>
+<script src="app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+.skyplot svg {
+  display: block;
+  width: 100%;
+  max-width: 340px;
+  margin: 8px auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skyplot .sky-now {
+    animation: none;
+    opacity: 1;
+  }
+}

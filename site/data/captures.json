@@ -1,0 +1,807 @@
+{
+ "generated": "2026-10-28T13:45:09.813461+00:00",
+ "captures": [
+  {
+   "id": "20261028T1146_57166_186-226-164-107_5555",
+   "title": "Northeast Brazil and the Atlantic, in daylight",
+   "sat": "Meteor-M N2-3",
+   "utc": "28 Oct 2026 11:49",
+   "product": "Colour from visible + near-infrared",
+   "shows": "A morning pass (about 8:50 am local) over northeast Brazil. Green is land, white is cloud building over the interior, and on the right is the Atlantic, with the coast running from around Recife toward Salvador; the hazy bright patch on the sea is sunglint. The camera has no blue channel, so we built the colour from its visible (0.5\u20130.7 \u00b5m) and near-infrared (0.7\u20131.1 \u00b5m) channels: the greens are our mix, the shapes are real. About 1 km per pixel. The thin yellow line is the coastline placed from the satellite's orbit and timestamps; the black bars are moments the signal dropped. Tap for the full 2,800 km-wide strip.",
+   "how": "Caught live at 11:45\u201311:57 UTC on 28 Oct 2026 through a volunteer's public RTL-SDR receiver with a simple quarter-wave VHF antenna in Bahia, Brazil; the satellite peaked at 59\u00b0. We streamed 12.5 minutes of raw I/Q (187,500 samples per second, 280 MB) with our own receiver client, then SatDump demodulated the 72k-symbol QPSK, ran Viterbi and Reed\u2013Solomon and rebuilt 776 scan lines, about 87% complete. We straightened the scan geometry, mixed the colour and laid the coastline on ourselves.",
+   "img": "img/m23-brazil-1149.jpg",
+   "w": 900,
+   "h": 482,
+   "full": "img/m23-brazil-1149-full.jpg",
+   "waterfall": "img/m23-brazil-1149-wf.jpg",
+   "track": [
+    [
+     -2.41,
+     -40.48
+    ],
+    [
+     -3.69,
+     -40.76
+    ],
+    [
+     -4.97,
+     -41.05
+    ],
+    [
+     -6.25,
+     -41.33
+    ],
+    [
+     -7.53,
+     -41.62
+    ],
+    [
+     -8.8,
+     -41.9
+    ],
+    [
+     -10.08,
+     -42.19
+    ],
+    [
+     -11.36,
+     -42.48
+    ],
+    [
+     -12.63,
+     -42.77
+    ],
+    [
+     -13.91,
+     -43.06
+    ],
+    [
+     -15.18,
+     -43.36
+    ],
+    [
+     -16.46,
+     -43.66
+    ]
+   ],
+   "receiver": {
+    "place": "Bahia, Brazil",
+    "device": "RTL-SDR",
+    "antenna": "quarter-wave VHF antenna"
+   }
+  },
+  {
+   "id": "20261028T1030_59051_45-190-78-70_5557",
+   "title": "Baja California at night, seen in heat",
+   "sat": "Meteor-M N2-4",
+   "utc": "28 Oct 2026 10:33",
+   "product": "Channel 4 \u00b7 thermal infrared",
+   "shows": "A night pass (about 3:30 am local), so this is a heat picture, not a light one: the camera's 10.5\u201311.5 \u00b5m thermal channel sees temperature. Bright means cold (cloud tops, desert that cooled overnight), grey means warmer (the sea). The bright shape is the Baja California peninsula with the Gulf of California beside it, around 24\u201329\u00b0N. The thin yellow lines are coastlines placed from the satellite's orbit and the timestamps inside the signal; everything under them is our decode. Black bars are moments the signal dropped. Tap for the full 2,800 km-wide strip.",
+   "how": "Caught live at 10:29\u201310:41 UTC on 28 Oct 2026 through a volunteer's public Airspy HF+ receiver with a 9-element FM antenna in Zapopan, near Guadalajara, Mexico; the satellite peaked at 34\u00b0. We streamed 11.5 minutes of raw I/Q (228,000 samples per second, 313 MB) with our own receiver client, then SatDump demodulated the 72k-symbol QPSK, ran Viterbi and Reed\u2013Solomon and rebuilt 568 scan lines, about 82% complete. We straightened the scan geometry and laid the coastlines on ourselves.",
+   "img": "img/m24-mexico-1033-ir.jpg",
+   "w": 900,
+   "h": 336,
+   "full": "img/m24-mexico-1033-ir-full.jpg",
+   "waterfall": "img/m24-mexico-1033-wf.jpg",
+   "track": [
+    [
+     32.95,
+     -110.06
+    ],
+    [
+     31.86,
+     -110.37
+    ],
+    [
+     30.77,
+     -110.68
+    ],
+    [
+     29.67,
+     -110.98
+    ],
+    [
+     28.58,
+     -111.28
+    ],
+    [
+     27.49,
+     -111.57
+    ],
+    [
+     26.39,
+     -111.86
+    ],
+    [
+     25.3,
+     -112.14
+    ],
+    [
+     24.2,
+     -112.42
+    ],
+    [
+     23.11,
+     -112.7
+    ],
+    [
+     22.01,
+     -112.97
+    ],
+    [
+     20.92,
+     -113.24
+    ]
+   ],
+   "receiver": {
+    "place": "Zapopan, Mexico",
+    "device": "AirspyHF+",
+    "antenna": "9-element FM antenna"
+   }
+  },
+  {
+   "id": "20261028T1323_59051_95-99-200-124_5555",
+   "title": "France from coast to Alps, at midday",
+   "sat": "Meteor-M N2-4",
+   "utc": "28 Oct 2026 13:27",
+   "product": "Colour from visible + near-infrared",
+   "shows": "A midday pass over western Europe, turned north-up. On the left is the Atlantic and France's straight west coast, then the French countryside dotted with small fair-weather clouds, and at bottom right a cloud blanket over Switzerland and the Alps. Only about 360 km of the pass came through (the signal was strong just around the overhead moment), but that slice is 97% complete. Same colour recipe as the Brazil photo (visible + near-infrared, no blue channel). Yellow lines are coastlines and borders placed from the orbit and timestamps. Tap for the full 2,800 km-wide strip.",
+   "how": "Caught live at 13:22\u201313:35 UTC on 28 Oct 2026 through a volunteer's public Airspy HF+ receiver in Utrecht, Netherlands; the satellite peaked at 73\u00b0. We streamed 12.6 minutes of raw I/Q (192,000 samples per second, 291 MB) with our own receiver client, and SatDump rebuilt 360 scan lines from it. We straightened the geometry, mixed the colour and added the coastlines ourselves.",
+   "img": "img/m24-europe-1327.jpg",
+   "w": 900,
+   "h": 231,
+   "full": "img/m24-europe-1327-full.jpg",
+   "waterfall": "img/m24-europe-1327-wf.jpg",
+   "track": [
+    [
+     43.64,
+     12.46
+    ],
+    [
+     44.77,
+     12.04
+    ],
+    [
+     45.89,
+     11.61
+    ],
+    [
+     47.01,
+     11.16
+    ],
+    [
+     48.13,
+     10.7
+    ],
+    [
+     49.24,
+     10.22
+    ],
+    [
+     50.36,
+     9.73
+    ],
+    [
+     51.47,
+     9.21
+    ],
+    [
+     52.58,
+     8.67
+    ],
+    [
+     53.69,
+     8.11
+    ]
+   ],
+   "receiver": {
+    "place": "Utrecht, Netherlands",
+    "device": "AirspyHF+",
+    "antenna": ""
+   }
+  },
+  {
+   "id": "20261028T0806_57166_86-121-20-123_8030",
+   "title": "Eastern Europe \u2192 Balkans, in strips",
+   "sat": "Meteor-M N2-3",
+   "utc": "28 Oct 2026 08:05",
+   "product": "Channel 1 \u00b7 visible",
+   "shows": "Visible-light channel (0.5\u20130.7 \u00b5m) from Meteor-M N2-3's MSU-MR camera, on a pass running from Karelia across Belarus, Ukraine and Romania toward Greece. The bright textures are cloud and the darker patches are land and sea. The black bands are moments the signal faded below what we could decode.",
+   "how": "Caught live at 08:05\u201308:17 UTC on 28 Oct 2026 through a volunteer's public Airspy HF+ receiver near Bucharest, Romania, at 68\u00b0 peak elevation. We streamed 12 minutes of raw I/Q (192,000 samples per second), then SatDump demodulated the 72k-symbol QPSK, ran Viterbi and Reed\u2013Solomon, and rebuilt 2,544 scan lines. The receiver's antenna isn't made for satellites, so only about 14% of each line got through: it's real, but in pieces.",
+   "img": "img/m23-romania-0806.jpg",
+   "w": 760,
+   "h": 1233,
+   "waterfall": "img/m23-romania-0806-wf.jpg",
+   "track": [
+    [
+     66.83,
+     35.99
+    ],
+    [
+     63.51,
+     32.73
+    ],
+    [
+     60.13,
+     30.1
+    ],
+    [
+     56.72,
+     27.92
+    ],
+    [
+     53.28,
+     26.06
+    ],
+    [
+     49.83,
+     24.43
+    ],
+    [
+     46.35,
+     22.99
+    ],
+    [
+     42.86,
+     21.7
+    ],
+    [
+     39.37,
+     20.51
+    ],
+    [
+     35.86,
+     19.41
+    ],
+    [
+     32.34,
+     18.39
+    ],
+    [
+     28.82,
+     17.42
+    ],
+    [
+     25.29,
+     16.5
+    ]
+   ],
+   "receiver": {
+    "place": "Ilfov, Romania",
+    "device": "AirspyHF+",
+    "antenna": ""
+   },
+   "zoom": "img/m23-romania-0811-zoom.jpg",
+   "zoom_caption": "Zoomed in on the cleanest patch (400\u00d7240 pixels at full resolution, contrast stretched, about 1 km per pixel): real terrain and cloud edges, scanned at 08:11:51 UTC when the satellite was over 45.0\u00b0N 22.5\u00b0E, near the Romania\u2013Serbia border. This patch sits a few hundred km to one side of that point; we didn't georeference it to the exact spot."
+  }
+ ],
+ "attempts": [
+  {
+   "utc": "28 Oct 13:30",
+   "sat": "M2-3",
+   "where": "Departamento Guaymall\u00e9n, Argentina \u00b7 J-POLE \u00b7 61\u00b0",
+   "result": "no lock (283 MB recorded)",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 13:26",
+   "sat": "M2-4",
+   "where": "North Ostrobothnia, Finland \u00b7 Logperiodic \u00b7 28\u00b0",
+   "result": "no lock (252 MB recorded)",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 13:23",
+   "sat": "M2-4",
+   "where": "Greater Manchester, United Kingdom \u00b7 antenna n/a \u00b7 46\u00b0",
+   "result": "no lock (274 MB recorded)",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 13:23",
+   "sat": "M2-4",
+   "where": "Greater Manchester, United Kingdom \u00b7 Mini-Whip \u00b7 47\u00b0",
+   "result": "no lock (228 MB recorded)",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 13:22",
+   "sat": "M2-4",
+   "where": "Frisia, Netherlands \u00b7 (test) EFHW K24. \u00b7 76\u00b0",
+   "result": "decoded \u00b7 72 lines",
+   "result_class": "ok"
+  },
+  {
+   "utc": "28 Oct 13:22",
+   "sat": "M2-4",
+   "where": "North Holland, Netherlands \u00b7 Wellbrook Loop for HF  \u00b7 71\u00b0",
+   "result": "receiver busy/offline",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 13:22",
+   "sat": "M2-4",
+   "where": "Utrecht, Netherlands \u00b7 antenna n/a \u00b7 73\u00b0",
+   "result": "decoded \u00b7 360 lines",
+   "result_class": "ok"
+  },
+  {
+   "utc": "28 Oct 13:22",
+   "sat": "M2-4",
+   "where": "Kreis Euskirchen, Germany \u00b7 Mini-Whip / Discone \u00b7 73\u00b0",
+   "result": "no lock (237 MB recorded)",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 13:21",
+   "sat": "M2-4",
+   "where": "Haute-Marne, France \u00b7 antenna n/a \u00b7 62\u00b0",
+   "result": "no lock (235 MB recorded)",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 13:21",
+   "sat": "M2-4",
+   "where": "Plze\u0148 Region, Czechia \u00b7 AOR DA-1500 Discone \u00b7 72\u00b0",
+   "result": "receiver busy/offline",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 13:21",
+   "sat": "M2-4",
+   "where": "Wahlkreis Rheintal, Switzerland \u00b7 ALA100 \u00b7 82\u00b0",
+   "result": "no lock (292 MB recorded)",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 13:20",
+   "sat": "M2-4",
+   "where": "Ilfov, Romania \u00b7 antenna n/a \u00b7 30\u00b0",
+   "result": "receiver busy/offline",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 11:45",
+   "sat": "M2-3",
+   "where": "Bahia, Brazil \u00b7 Antena Base VHF 1/4 de \u00b7 59\u00b0",
+   "result": "decoded \u00b7 776 lines",
+   "result_class": "ok"
+  },
+  {
+   "utc": "28 Oct 11:44",
+   "sat": "M2-4",
+   "where": "North Ostrobothnia, Finland \u00b7 Logperiodic \u00b7 90\u00b0",
+   "result": "no lock (287 MB recorded)",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 11:40",
+   "sat": "M2-4",
+   "where": "Ilfov, Romania \u00b7 antenna n/a \u00b7 39\u00b0",
+   "result": "no lock (273 MB recorded)",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 11:00",
+   "sat": "M2-3",
+   "where": "Japan \u00b7 Wire \u00b7 60\u00b0",
+   "result": "receiver busy/offline",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 10:41",
+   "sat": "M2-3",
+   "where": "New South Wales, Australia \u00b7 active loop \u00b7 38\u00b0",
+   "result": "no lock (274 MB recorded)",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 10:29",
+   "sat": "M2-4",
+   "where": "Zapopan, Mexico \u00b7 9 element SBFM9 Sky Bl \u00b7 34\u00b0",
+   "result": "decoded \u00b7 568 lines",
+   "result_class": "ok"
+  },
+  {
+   "utc": "28 Oct 10:28",
+   "sat": "M2-4",
+   "where": "Santa Catarina, Mexico \u00b7 Finco 400-A Antenna fo \u00b7 29\u00b0",
+   "result": "no lock (302 MB recorded)",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 10:26",
+   "sat": "M2-4",
+   "where": "Tarrant County, United States \u00b7 Tram 1410 Super Discon \u00b7 29\u00b0",
+   "result": "no lock (197 MB recorded)",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 10:24",
+   "sat": "M2-4",
+   "where": "Reno County, United States \u00b7 antenna n/a \u00b7 36\u00b0",
+   "result": "no lock (318 MB recorded)",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 10:21",
+   "sat": "M2-4",
+   "where": "Barnes County, United States \u00b7 antenna n/a \u00b7 53\u00b0",
+   "result": "no lock (277 MB recorded)",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 10:05",
+   "sat": "M2-4",
+   "where": "North Ostrobothnia, Finland \u00b7 Logperiodic \u00b7 33\u00b0",
+   "result": "no lock (258 MB recorded)",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 09:48",
+   "sat": "M2-3",
+   "where": "Leiria, Portugal \u00b7 antenna n/a \u00b7 64\u00b0",
+   "result": "no lock (225 MB recorded)",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 09:47",
+   "sat": "M2-3",
+   "where": "Community of Madrid, Spain \u00b7 dipole \u00b7 83\u00b0",
+   "result": "no lock (290 MB recorded)",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 09:45",
+   "sat": "M2-3",
+   "where": "Wahlkreis Rheintal, Switzerland \u00b7 ALA100 \u00b7 40\u00b0",
+   "result": "no lock (271 MB recorded)",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 09:45",
+   "sat": "M2-3",
+   "where": "Haute-Marne, France \u00b7 antenna n/a \u00b7 58\u00b0",
+   "result": "receiver busy/offline",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 09:44",
+   "sat": "M2-3",
+   "where": "Plze\u0148 Region, Czechia \u00b7 AOR DA-1500 Discone \u00b7 34\u00b0",
+   "result": "no lock (215 MB recorded)",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 09:44",
+   "sat": "M2-3",
+   "where": "Kreis Euskirchen, Germany \u00b7 Mini-Whip / Discone \u00b7 56\u00b0",
+   "result": "no lock (232 MB recorded)",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 09:44",
+   "sat": "M2-3",
+   "where": "Utrecht, Netherlands \u00b7 antenna n/a \u00b7 65\u00b0",
+   "result": "decoded \u00b7 56 lines",
+   "result_class": "ok"
+  },
+  {
+   "utc": "28 Oct 09:44",
+   "sat": "M2-3",
+   "where": "Greater Manchester, United Kingdom \u00b7 Mini-Whip \u00b7 74\u00b0",
+   "result": "no lock (237 MB recorded)",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 09:44",
+   "sat": "M2-3",
+   "where": "Greater Manchester, United Kingdom \u00b7 antenna n/a \u00b7 73\u00b0",
+   "result": "no lock (284 MB recorded)",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 09:44",
+   "sat": "M2-3",
+   "where": "North Holland, Netherlands \u00b7 Wellbrook Loop for HF  \u00b7 68\u00b0",
+   "result": "receiver busy/offline",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 09:44",
+   "sat": "M2-3",
+   "where": "Frisia, Netherlands \u00b7 (test) EFHW K24. \u00b7 67\u00b0",
+   "result": "no lock (342 MB recorded)",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 09:40",
+   "sat": "M2-3",
+   "where": "North Ostrobothnia, Finland \u00b7 Logperiodic \u00b7 45\u00b0",
+   "result": "no lock (271 MB recorded)",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 08:49",
+   "sat": "M2-4",
+   "where": "San Juan del R\u00edo, Mexico \u00b7 4 element FM YAGI Stel \u00b7 26\u00b0",
+   "result": "decoded \u00b7 152 lines",
+   "result_class": "ok"
+  },
+  {
+   "utc": "28 Oct 08:46",
+   "sat": "M2-4",
+   "where": "Tarrant County, United States \u00b7 Tram 1410 Super Discon \u00b7 28\u00b0",
+   "result": "no lock (199 MB recorded)",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 08:44",
+   "sat": "M2-4",
+   "where": "Reno County, United States \u00b7 antenna n/a \u00b7 26\u00b0",
+   "result": "no lock (92 MB recorded)",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 08:42",
+   "sat": "M2-4",
+   "where": "Anne Arundel County, United States \u00b7 discone \u00b7 53\u00b0",
+   "result": "no lock (295 MB recorded)",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 08:06",
+   "sat": "M2-3",
+   "where": "Genoa, Italy \u00b7 Magnetic Loop on plane \u00b7 32\u00b0",
+   "result": "no lock (427 MB recorded)",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 08:06",
+   "sat": "M2-3",
+   "where": "Pavia, Italy \u00b7 tribanda v/u/50 mhz \u00b7 32\u00b0",
+   "result": "no lock (232 MB recorded)",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 08:05",
+   "sat": "M2-3",
+   "where": "Wahlkreis Rheintal, Switzerland \u00b7 ALA100 \u00b7 32\u00b0",
+   "result": "no lock (104 MB recorded)",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 08:05",
+   "sat": "M2-3",
+   "where": "Ilfov, Romania \u00b7 antenna n/a \u00b7 68\u00b0",
+   "result": "decoded \u00b7 2576 lines",
+   "result_class": "ok"
+  },
+  {
+   "utc": "28 Oct 08:05",
+   "sat": "M2-3",
+   "where": "Kreis Euskirchen, Germany \u00b7 Mini-Whip / Discone \u00b7 25\u00b0",
+   "result": "no lock (399 MB recorded)",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 08:04",
+   "sat": "M2-3",
+   "where": "Plze\u0148 Region, Czechia \u00b7 AOR DA-1500 Discone \u00b7 41\u00b0",
+   "result": "no lock (1796 MB recorded)",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 08:01",
+   "sat": "M2-4",
+   "where": "Probolinggo, Indonesia \u00b7 MLA-30 \u00b7 27\u00b0",
+   "result": "no lock (595 MB recorded)",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 08:01",
+   "sat": "M2-4",
+   "where": "Kabupaten Malang, Indonesia \u00b7 Mini SDR antenna with  \u00b7 28\u00b0",
+   "result": "no lock (495 MB recorded)",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 07:22",
+   "sat": "M2-4",
+   "where": "Departamento Guaymall\u00e9n, Argentina \u00b7 J-POLE \u00b7 50\u00b0",
+   "result": "recorder level bug (fixed)",
+   "result_class": "no"
+  },
+  {
+   "utc": "28 Oct 07:13",
+   "sat": "M2-4",
+   "where": "Cali, Colombia \u00b7 wire \u00b7 31\u00b0",
+   "result": "no lock (402 MB recorded)",
+   "result_class": "no"
+  }
+ ],
+ "schedule": [
+  {
+   "utc": "28 Oct 14:10",
+   "sat": "METEOR-M2 3",
+   "where": "Kabupaten Malang, Indonesia"
+  },
+  {
+   "utc": "28 Oct 14:10",
+   "sat": "METEOR-M2 3",
+   "where": "Probolinggo, Indonesia"
+  },
+  {
+   "utc": "28 Oct 14:51",
+   "sat": "METEOR-M2 3",
+   "where": "Anne Arundel County, United States"
+  },
+  {
+   "utc": "28 Oct 14:59",
+   "sat": "METEOR-M2 4",
+   "where": "Leiria, Portugal"
+  },
+  {
+   "utc": "28 Oct 15:00",
+   "sat": "METEOR-M2 4",
+   "where": "Community of Madrid, Spain"
+  },
+  {
+   "utc": "28 Oct 15:04",
+   "sat": "METEOR-M2 4",
+   "where": "Greater Manchester, United Kingdom"
+  }
+ ],
+ "receivers": [
+  {
+   "lat": 3.4,
+   "lon": -76.5,
+   "ok": false
+  },
+  {
+   "lat": -32.9,
+   "lon": -68.8,
+   "ok": false
+  },
+  {
+   "lat": -7.9,
+   "lon": 112.7,
+   "ok": false
+  },
+  {
+   "lat": -7.9,
+   "lon": 113.0,
+   "ok": false
+  },
+  {
+   "lat": 49.8,
+   "lon": 13.4,
+   "ok": false
+  },
+  {
+   "lat": 50.5,
+   "lon": 6.4,
+   "ok": false
+  },
+  {
+   "lat": 44.7,
+   "lon": 26.2,
+   "ok": true
+  },
+  {
+   "lat": 47.4,
+   "lon": 9.6,
+   "ok": false
+  },
+  {
+   "lat": 45.3,
+   "lon": 9.2,
+   "ok": false
+  },
+  {
+   "lat": 44.4,
+   "lon": 9.0,
+   "ok": false
+  },
+  {
+   "lat": 38.8,
+   "lon": -76.6,
+   "ok": false
+  },
+  {
+   "lat": 37.8,
+   "lon": -97.8,
+   "ok": false
+  },
+  {
+   "lat": 32.8,
+   "lon": -97.3,
+   "ok": false
+  },
+  {
+   "lat": 20.4,
+   "lon": -100.0,
+   "ok": true
+  },
+  {
+   "lat": 64.874961,
+   "lon": 25.478837,
+   "ok": false
+  },
+  {
+   "lat": 53.2,
+   "lon": 5.5,
+   "ok": true
+  },
+  {
+   "lat": 52.4,
+   "lon": 4.8,
+   "ok": false
+  },
+  {
+   "lat": 53.6,
+   "lon": -2.6,
+   "ok": false
+  },
+  {
+   "lat": 53.5,
+   "lon": -2.4,
+   "ok": false
+  },
+  {
+   "lat": 52.1872,
+   "lon": 5.3607,
+   "ok": true
+  },
+  {
+   "lat": 48.633,
+   "lon": 4.9536,
+   "ok": false
+  },
+  {
+   "lat": 40.4,
+   "lon": -3.4,
+   "ok": false
+  },
+  {
+   "lat": 39.5,
+   "lon": -8.9,
+   "ok": false
+  },
+  {
+   "lat": 46.9,
+   "lon": -98.0,
+   "ok": false
+  },
+  {
+   "lat": 25.7,
+   "lon": -100.5,
+   "ok": false
+  },
+  {
+   "lat": 20.7,
+   "lon": -103.6,
+   "ok": true
+  },
+  {
+   "lat": -33.8688,
+   "lon": 151.2093,
+   "ok": false
+  },
+  {
+   "lat": 35.3331,
+   "lon": 139.3423,
+   "ok": false
+  },
+  {
+   "lat": -16.4,
+   "lon": -39.6,
+   "ok": true
+  },
+  {
+   "lat": 44.7,
+   "lon": -123.3,
+   "ok": false
+  }
+ ]
+}
